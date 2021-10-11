@@ -7,7 +7,15 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 require "faker"
+Thing.destroy_all
+Cat.destroy_all
+User.destroy_all
+  
 Thing.create(name: Faker::Company.name)
 Thing.create(name: Faker::Company.name)
+
+Cat.create(name: Faker::Creature::Cat.name)
+Cat.create(name: Faker::Creature::Cat.name)
+Cat.create(name: Faker::Creature::Cat.name)
 
 User.create(email: "test@test.com", password: "123456")

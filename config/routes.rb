@@ -10,5 +10,7 @@ Rails.application.routes.draw do
     get "users", to: "users#index"
     get "users/:id", to: "users#show"
     put "users/:id", to: "users#update"
+
+    get 'cats', to: 'cats#index'
   end
 end
