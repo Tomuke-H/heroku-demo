@@ -13,4 +13,5 @@ Rails.application.routes.draw do
 
     get 'cats', to: 'cats#index'
   end
+  get '*other', to: 'static#index'
 end
