@@ -27,6 +27,7 @@ const Cats = () => {
 
   return (
     <div>
+      <h2>CATS!!!!</h2>
       {renderCats()}
     </div>
   )
